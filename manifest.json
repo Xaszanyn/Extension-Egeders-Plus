@@ -1,0 +1,20 @@
+{
+    "name": "Egeders+",
+    "description": "Egeders için gece modu özelliği.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "16": "/images/16.png",
+        "48": "/images/48.png",
+        "128": "/images/128.png"
+    },
+    "content_scripts": [{
+        "matches": ["*://egedersbahar.ege.edu.tr/*"],
+        "css": ["base.css"],
+        "js": ["egeders+.js"]
+    }],
+    "browser_action": {
+        "default_popup": "menu.html",
+        "default_title": "Egeders+"
+    }
+}

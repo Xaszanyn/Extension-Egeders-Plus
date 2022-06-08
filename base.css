@@ -1,0 +1,75 @@
+#ekinHelp {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: rgba(7, 7, 7, .5);
+    display: flex;
+    transition: background-color .5s;
+}
+
+#ekinHelp.closed {
+    background-color: transparent;
+}
+
+#ekinHelpBox {
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: #F7F7F7;
+    border-radius: 25px;
+    transition: transform .5s;
+}
+
+#ekinHelpBox.closed {
+    transform: scale(0);
+}
+
+#ekinHelpNavigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#ekinHelpLogo {
+    width: 50px;
+    height: 50px;
+}
+
+#ekinHelpTitle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #070707;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+#ekinHelpClose {
+    color: #BF0707;
+    font-size: 18px !important;
+    border: 2px solid #BF0707;
+    border-radius: 50px;
+    transition: all .5s;
+    padding: 0 10px;
+    box-shadow: 0 1px 5px;
+}
+
+#ekinHelpClose:hover {
+    text-decoration: none;
+    border-color: #1FBF1F;
+    color: #1FBF1F;
+    box-shadow: 0 3px 3px;
+}
+
+#ekinHelpText {
+    padding: 10px 5px 0;
+    font-size: 18px;
+    color: #070707;
+    margin: 0;
+}
+

@@ -1,0 +1,38 @@
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+#options a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: #BF0707;
+    border: 2px solid #BF0707;
+    border-radius: 20px;
+    padding: 3px 10px;
+    transition: all .5s;
+}
+
+#options a:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+#options .enabled {
+    color: #1FBF1F;
+    border-color: #1FBF1F;
+    border-width: 5px;
+    font-weight: 500;
+    padding: 0 15px;
+}
+
+document.addEventListener('keydown', (event) => {
+    var name = event.key;
+    var code = event.code;
+}, false);
+
+document.querySelectorAll('*').forEach(function(element) {
+    if (element.tagName != "I") element.style.fontFamily += "Kanit";
+});
